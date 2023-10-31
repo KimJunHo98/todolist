@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <!-- header -->
+            <header id="header">
+                <div id="sec_login">
+                    <h1 id="greeting" class="hidden"></h1>
+                    <div id="login">
+                        <form id="login_form" class="hidden">
+                            <input type="text" placeholder="What is your name?" required maxlength="15">
+                            <input class="login_btn" type="submit" value="Log In">
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+            <!-- clock -->
+            <section id="sec_clock">
+                <h2 id="clock">00:00</h2>
+            </section>
+            <!-- //clock -->
+            <!-- todo_calendar -->
+            <section id="todo_calendar">
+                <div id="todo">
+                    <div class="row">
+                        <form class="todo_form">
+                            <input type="text" placeholder="Write a To Do and Press Enter" required>
+                        </form>
+                        <ul class="todo_list"></ul>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <div class="row">
+                        <div class="cal_nav">
+                            <a href="#" class="nav-btn go-prev">prev</a>
+                            <div class="yearMonth"></div>
+                            <a href="#" class="nav-btn go-next">next</a>
+                        </div>
+                        <div class="cal_wrap">
+                            <div class="days">
+                                <div class="day">MON</div>
+                                <div class="day">TUE</div>
+                                <div class="day">WED</div>
+                                <div class="day">THU</div>
+                                <div class="day">FRI</div>
+                                <div class="day">SAT</div>
+                                <div class="day">SUN</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- //todo_calendar -->
+        <div class="bgImg">
+            <img src="img/bgimg.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>
